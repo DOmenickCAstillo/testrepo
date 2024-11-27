@@ -1,0 +1,185 @@
+//website i made in school
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOmenick CAstillo - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          DOmenick CAstillo
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          DOme@FAchoso.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class='topmenu' href='#skills'>Skills</a>
+          <a class='topmenu' href='#projects'>Projects</a>
+          <a class='topmenu' href='#recommendations'>Recommendations</a>
+        
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div class='wrap'>
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3F0OTd6aWhjNmQwZGdmNXdwNnMwc3RhbW5idmM5aHZ6amh0Y2FjOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26BGIqWh2R1fi6JDa/giphy.webp" width="400px" height="400px" class='myImage'/>
+      </div>
+
+      <div>
+          <h1>
+            hello im DOmenick CAstillo
+          </h1>
+          <p>
+           i am a full stack developer in the making.
+           i started learning javascript and quickly jumped in to the ibm fullstack course.
+           will soon be building cool software.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 weeks experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>2 months experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class='skill'>
+            <img src='html_finalprojimages/CSS3.png'/>
+            <h6>CSS</h6>
+            <p>2 weeks of experience</p>
+        </div>
+
+        <div class='skill'>
+            <img src='html_finalprojimages/node.png'/>
+            <h6>Node</h6>
+            <p>0 experience with node BUT not for long</p>
+        </div>
+
+        <div class='skill'>
+            <img src='html_finalprojimages/react.png'/>
+            <h6>React</h6>
+            <p>0 experience with node BUT not for long</p>
+        </div>
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Interest Calculator</h3>
+            <ul>
+              <li>Developed a website that automatically claculates based on value input</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>This site</h3>
+            <ul>
+              <li>Developed and styled this website to fit my aesthetic</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Pick Up App</h3>
+            <ul>
+              <li>My goal is to create an app to help my favorite local coffee shop with their rush our orders</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          DOmenick learns fast, asks the right question and is efficient.
+          will soon be a great lead.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          working with DOmenick was an awsome experience.
+          he has a fun attitude and can keep your spirits up while getting work done.
+          def my number one pick.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          worked with DOmenick for the developing of our app in our coffee shop.
+          made the app cool to match our niche vibe and got us set up right. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>thanks for recommending</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
